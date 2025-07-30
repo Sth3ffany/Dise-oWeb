@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clínica Integral</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f8ff;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
+    .container {
+      width: 100%;
+      max-width: 500px;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #99ccff;
+      text-align: center; /* centra el texto dentro */
+    }
+    h1 {
+      color: #1e3f66;
+    }
+    h2, h3 {
+      color: #1e3f66;
+      margin-top: 20px;
+    }
+    form {
+      text-align: left; /* campos alineados a la izquierda para mejor lectura */
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #99ccff;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    button {
+      background: #1e90ff;
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+    nav {
+      margin: 20px 0;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #1e3f66;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Clínica Integral</h1>
+
+    <nav>
+      <a href="Registro.html">Formulario</a>
+      <a href="regis2.php">Pacientes</a>
+    </nav>
+
+    <form method="POST" action="regis2.php">
+      <h3>Registro de Paciente</h3>
+      <input type="text" name="nombre" placeholder="Nombre del paciente">
+      <input type="number" name="edad" placeholder="Edad del paciente">
+
+      <h3>Contacto</h3>
+      <input type="text" name="nombreC" placeholder="Tu nombre">
+      <input type="email" name="email" placeholder="Tu correo">
+      <textarea name="mensaje" placeholder="Mensaje" rows="4"></textarea>
+
+      <button type="submit" name="enviar">Enviar</button>
+    </form>
+  </div>
+
+</body>
+</html>
